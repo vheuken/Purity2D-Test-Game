@@ -32,7 +32,7 @@
   </properties>
  </objectgroup>
  <objectgroup name="Entities" width="50" height="150">
-  <object name="Player" type="Player" x="224" y="194" width="44" height="44"/>
+  <object name="Player" type="Movable" x="224" y="194" width="44" height="44"/>
  </objectgroup>
  <objectgroup name="Objects" width="50" height="150"/>
  <objectgroup name="Climbable" width="50" height="150">
