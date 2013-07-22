@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="150" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="test_tileset_1" tilewidth="16" tileheight="16">
+  <image source="test_tileset_1.png" trans="ff00ff" width="48" height="32"/>
+  <tile id="2">
+   <properties>
+    <property name="Climbable" value="True"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="Climbable" value="True"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="TileBackground" width="50" height="150">
+  <data encoding="base64" compression="zlib">
+   eJztyrEJAAAIwDBB/79ZP9DdBLo1YpdTHT4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4LcGqKEACA==
+  </data>
+ </layer>
+ <layer name="TileCollision" width="50" height="150">
+  <properties>
+   <property name="Collidable" value="1"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt2uFugzAMRtGog77/I0/RGolWxDbDBDu9R8ov6JSvjiHQlfJn+cd4nhzridFT5/UQjkdR57gIxzPlkOaZKccs9fDOUT+zlv51YO/89hlLz+6hHrH8FDnH43VOs7dO2hq6k5ZjKe85Ruj1i9Q3lhxPp3lt5+dtRI4RyBHLLDnqHGfIYbkPeubY3m887ztncmj7qN5+6gpajno80rqS9hNajrv3HJr2DKXlGLFPtH6ve67IcdW5krX479uPfJde67XtHy3P59HGZw7Le4Y7h2XvbllXo/r8DEs9yDGOpc8z5GhzlJ4zZ8mh1SuCGXP05pptXfVqkiXHWuS1lSWH1iOZ+oMcMVhyZOiP7b4ke45Z6kGOOLTe2J4TmSWHdjwCaw7qMcY31SNTn2d/zzBbjm/ojwjXK+k9r2WvW0qMeki/o1lzZLpeRV9XmizrSkM9YrH8b+bnO8ftvTPasOTYy+MxvP9mj/e8j+TzrAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHPULGx8ImA==
+  </data>
+ </layer>
+ <objectgroup name="Collision" width="50" height="150">
+  <properties>
+   <property name="Collidable" value="true"/>
+  </properties>
+ </objectgroup>
+ <objectgroup name="Entities" width="50" height="150">
+  <object name="Player" type="Player" x="224" y="194" width="44" height="44"/>
+ </objectgroup>
+ <objectgroup name="Objects" width="50" height="150"/>
+ <objectgroup name="Climbable" width="50" height="150">
+  <object type="ClimbableLine" x="64" y="128">
+   <polyline points="0,0 0,175"/>
+  </object>
+  <object type="ClimbableLine" x="240" y="16">
+   <polyline points="-2,1 254,1"/>
+  </object>
+  <object type="ClimbableLine" x="702" y="111">
+   <polyline points="1,0 1,128"/>
+  </object>
+ </objectgroup>
+</map>
